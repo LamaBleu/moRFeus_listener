@@ -77,10 +77,10 @@ Launch :
 
     or use 'KK' command from CLI
   
-    
-      
-             ![image](https://user-images.githubusercontent.com/26578895/41089527-4ed8b794-6a42-11e8-9913-7a0b3bb68a1f.png)   
-    
+  
+![image](https://user-images.githubusercontent.com/26578895/41089527-4ed8b794-6a42-11e8-9913-7a0b3bb68a1f.png)   
+  
+  
 TIPS :
 ======
 
