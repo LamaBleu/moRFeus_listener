@@ -95,28 +95,28 @@ ONCE AGAIN : Be careful to add this line BEFORE 'exit 0' and set correct path !
 
 - Network
 
-TCP : echo "M 4" | nc -q2 192.168.0.21 7778 
-TCP : echo "G 3" | nc -q3 192.168.0.21 7778 >&- (nd mode: no message displayed on console)
-UDP : echo "M 2" | nc -u 192.168.0.21 7779
-UDP : echo "G 2" | nc -u -q1 192.168.0.21 7779 >&-  (blind mode: no message displayed on console)
+TCP : echo "M 4" | nc -q2 192.168.0.21 7778  
+TCP : echo "G 3" | nc -q3 192.168.0.21 7778 >&- (nd mode: no message displayed on console)  
+UDP : echo "M 2" | nc -u 192.168.0.21 7779  
+UDP : echo "G 2" | nc -u -q1 192.168.0.21 7779 >&-  (blind mode: no message displayed on console)  
 
-Telnet : telnet 192.168.0.21 7778
-another simple telnet "client" for linux: nc 192.168.0.21 7778
-
-Get moRFeus status from shell :
-get frequency : nc 192.168.0.21 7780 | grep Freq | awk '{print $3}'
-get mode : nc 192.168.0.21 7780 | grep Freq | awk '{print $3}'
-get power : nc 192.168.0.21 7780 | grep Power | awk '{print $3}'
-
-- Network checking (is the server running?)
-
-sudo netstat -atupn | grep socat
-
-display listening ports :
-
-tcp        0      0 0.0.0.0:7780            0.0.0.0:*               LISTEN      852/socat
-tcp        0      0 0.0.0.0:7778            0.0.0.0:*               LISTEN      850/socat
-udp        0      0 0.0.0.0:7779            0.0.0.0:*                           851/socat
+Telnet : telnet 192.168.0.21 7778  
+another simple telnet "client" for linux: nc 192.168.0.21 7778  
+  
+Get moRFeus status from shell :  
+get frequency : nc 192.168.0.21 7780 | grep Freq | awk '{print $3}'  
+get mode : nc 192.168.0.21 7780 | grep Freq | awk '{print $3}'  
+get power : nc 192.168.0.21 7780 | grep Power | awk '{print $3}'  
+  
+- Network checking (is the server running?)  
+  
+sudo netstat -atupn | grep socat  
+  
+display listening ports :  
+  
+    tcp        0      0 0.0.0.0:7780            0.0.0.0:*               LISTEN      852/socat  
+    tcp        0      0 0.0.0.0:7778            0.0.0.0:*               LISTEN      850/socat  
+    udp        0      0 0.0.0.0:7779            0.0.0.0:*                           851/socat  
 
 
 - SSH access
