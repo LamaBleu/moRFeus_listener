@@ -8,7 +8,7 @@ by LamaBleu 05/2018
 
 Once again using bash: simple, portable & robust.
 I writed this script to control moRFeus from network, using more or less GQRX remote control protocol.
-
+Please report issue or adapt to fit your needs :)
 
 Features :
 ==========
@@ -122,16 +122,19 @@ display listening ports :
 - SSH access
 
 
-ssh username@morfeus_ip-address 'sudo /path_to_morfeus_listener/morf_cli.sh'
+    ssh username@morfeus_ip-address 'sudo /path_to_morfeus_listener/morf_cli.sh'  
+    
 example :
+
     ssh myname@192.168.0.11 'sudo /home/myname/moRFeus_listener/morf_cli.sh'
-However this is not really secure :(
 
-More secure alternative is to add a specific user (belonging to sudo group) for moRFeus device:
-
-    moRFeus:x:1001:1001::/home/moRFeus:/home/moRFeus/moRFeus_listener/morf_cli.sh
-
-and give full rights through /etc/sudoers file:
+However this is not really secure :(  
+  
+More secure alternative is to add a specific user (belonging to sudo group) for moRFeus device:  
+  
+    moRFeus:x:1001:1001::/home/moRFeus:/home/moRFeus/moRFeus_listener/morf_cli.sh  
+  
+and give full rights through /etc/sudoers file:  
 moRFeus   ALL=NOPASSWD:  /home/moRFeus/moRFeus_listener/
 
 
