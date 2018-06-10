@@ -67,8 +67,8 @@ Launch :
     cd ~/moRFeus_listener  
     sudo ./morf_cli.sh  
 
-- network daemon : 
-
+- network daemon :
+    
     cd ~/moRFeus_listener  
     sudo ./morf_tcp.sh &  
 
