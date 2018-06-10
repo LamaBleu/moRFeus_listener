@@ -21,10 +21,10 @@ Simultaneous connections allowed.
 - Send raw TCP/UDP frames to moRFeus from scripts.  
 
 
-- Ports usage
- 7778 : TCP port for telnet access
- 7779 : UDP port
- 7780 : display HTTP status only.
+- Ports usage  
+ 7778 : TCP port for telnet access  
+ 7779 : UDP port  
+ 7780 : display HTTP status only.  
 
 
 Available commands :
