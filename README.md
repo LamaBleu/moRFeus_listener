@@ -13,7 +13,7 @@ Please report issue or adapt to fit your needs :)
 Features :
 ==========
 
-- Remote or local access to moRFeus using TCP/IP.
+- Remote or local (127.0.0.1) access to moRFeus using TCP/IP.  
 Nothing to install on client computer, except a telnet client (PuTTY or other terminal app)  
 Simultaneous connections allowed.
 - Local use: launch CLI from console (no networking)  
@@ -61,7 +61,7 @@ Launch :
 
 - Manual launch from terminal:  
 
- basic for local use, no network  
+ basic for local use from shell, no network  
     
     cd ~/moRFeus_listener  
     sudo ./morf_cli.sh  
@@ -70,6 +70,8 @@ Launch :
 
     cd ~/moRFeus_listener  
     sudo ./morf_tcp.sh &  
+
+and access to the CLI : telnet morfeus_ip morfeus_port (127.0.0.1 if moRFeus connected to local computer)
 
 - kill server  
 
@@ -96,7 +98,7 @@ ONCE AGAIN : Be careful to add this line BEFORE 'exit 0' and set correct path !
 - Network
 
 TCP : echo "M 4" | nc -q2 192.168.0.21 7778  
-TCP : echo "G 3" | nc -q3 192.168.0.21 7778 >&- (nd mode: no message displayed on console)  
+TCP : echo "G 3" | nc -q3 192.168.0.21 7778 >&- (blind mode: no message displayed on console)  
 UDP : echo "M 2" | nc -u 192.168.0.21 7779  
 UDP : echo "G 2" | nc -u -q1 192.168.0.21 7779 >&-  (blind mode: no message displayed on console)  
 
@@ -135,7 +137,8 @@ More secure alternative is to add a specific user (belonging to sudo group) for 
     moRFeus:x:1001:1001::/home/moRFeus:/home/moRFeus/moRFeus_listener/morf_cli.sh  
   
 and give full rights through /etc/sudoers file:  
-moRFeus   ALL=NOPASSWD:  /home/moRFeus/moRFeus_listener/
+
+    moRFeus   ALL=NOPASSWD:  /home/moRFeus/moRFeus_listener/
 
 
 
