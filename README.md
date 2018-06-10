@@ -37,7 +37,7 @@ Available commands :
     X or Q : disconnect  
     KK : disconnect and KILL server  
 
-* examples : G , G 0 , M 1 , F 547854789
+* examples : G , M 0 , G 5 , F 547854789
 * lowercase/UPPERCASE accepted. errors are ignored by CLI or moRFeus
 * x (to set power) can be omitted, power is kept unmodified
 
