@@ -42,12 +42,13 @@ Available commands :
 * x (to set power) can be omitted, power is kept unmodified
 
 
-Install :
-=========
-   git clone https://github.com/LamaBleu/moRFeus_listener
-   cd moRFeus_listener
-   chmod +x ./setup.sh
-   ./setup.sh
+Install :  
+=========  
+
+    git clone https://github.com/LamaBleu/moRFeus_listener
+    cd moRFeus_listener
+    chmod +x ./setup.sh
+    ./setup.sh
 
 Actions performed by setup.sh :
 - download morfeus_tool from Outernet archives website for the right platform
