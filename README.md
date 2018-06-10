@@ -60,19 +60,20 @@ For a RPi running with default user 'pi', downloading and making executable the 
 Launch :  
 ==========
 
-- Manual launch from terminal:  
+-Manual launch from terminal:  
 
  basic for local use from shell, no network  
     
     cd ~/moRFeus_listener  
     sudo ./morf_cli.sh  
 
-- network daemon :
-    
-    cd ~/moRFeus_listener  
-    sudo ./morf_tcp.sh &  
 
-and access to the CLI : telnet morfeus_ip morfeus_port (127.0.0.1 if moRFeus connected to local computer)
+-network daemon :
+ 
+    cd ~/moRFeus_listener  
+    sudo ./morf_tcp.sh &
+
+and access to the CLI : telnet morfeus_ip 7778 (ip=127.0.0.1 if moRFeus connected to local computer)
 
 - kill server  
 
