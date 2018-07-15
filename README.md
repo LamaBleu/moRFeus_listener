@@ -11,8 +11,8 @@ I writed this script to control moRFeus from network, using more or less GQRX re
 Please report issue or adapt to fit your needs :)  
 
 Online demo available :  
-telnet (or PuTTY) morfeus.lamableu.net on port 7778  
-HTTP status : http://morfeus.lamableu.net:7780
+~~telnet (or PuTTY) morfeus.lamableu.net on port 7778  
+HTTP status : http://morfeus.lamableu.net:7780~~
 
 Features :
 ==========
