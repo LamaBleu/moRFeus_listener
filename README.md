@@ -12,7 +12,7 @@ Please report issue or adapt to fit your needs :)
 
 ~~Online demo available :  
 telnet (or PuTTY) morfeus.lamableu.net on port 7778  
-HTTP status : http://morfeus.lamableu.net:7780
+HTTP status : http://morfeus.lamableu.net:7780 ~~
 
 Features :
 ==========
