@@ -10,7 +10,7 @@ Once again using bash: simple, portable & robust.
 I writed this script to control moRFeus from network, using more or less GQRX remote control protocol.
 Please report issue or adapt to fit your needs :)  
 
-Online demo available :  
+~~Online demo available :  
 telnet (or PuTTY) morfeus.lamableu.net on port 7778  
 HTTP status : http://morfeus.lamableu.net:7780
 
